@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>清风云 DNS</string>
+    <key>PayloadDescription</key>
+    <string>Adds the 清风云 DNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.653e8876-f458-4e52-8520-63d42c5a41ca</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>df6c9f6c-b7e5-4876-b212-5e84f03c2436</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- 清风云 DNS (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>清风云 DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.d2e76e88-264f-4748-9eff-6ef366a4af4a</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>d2e76e88-264f-4748-9eff-6ef366a4af4a</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerURL</key>
+          <string>https://dns.ipv4dns.com/dns-query</string>
+        </dict>
+      </dict>
+      <!-- 清风云 DNS (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>清风云 DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.14a00c1b-aafa-4bb2-a07b-a27aa5b2f13f</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>14a00c1b-aafa-4bb2-a07b-a27aa5b2f13f</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerName</key>
+          <string>dns.ipv4dns.com</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

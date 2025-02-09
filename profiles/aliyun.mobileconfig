@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>Ali DNS</string>
+    <key>PayloadDescription</key>
+    <string>Adds the Ali DNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.e1732492-b508-497e-a1bc-25398f661b33</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>e1732492-b508-497e-a1bc-25398f661b33</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- Ali DNS (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Ali DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.c90a14b6-91a1-4fc9-8097-16494e097aeb</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>c90a14b6-91a1-4fc9-8097-16494e097aeb</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2400:3200::1</string>
+            <string>2400:3200:baba::1</string>
+            <string>223.5.5.5</string>
+            <string>223.6.6.6</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://dns.alidns.com/dns-query</string>
+        </dict>
+      </dict>
+      <!-- Ali DNS (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Ali DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.26261a5d-e241-4b4c-9d0c-1c8917bbfc4b</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>26261a5d-e241-4b4c-9d0c-1c8917bbfc4b</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2400:3200::1</string>
+            <string>2400:3200:baba::1</string>
+            <string>223.5.5.5</string>
+            <string>223.6.6.6</string>
+          </array>
+          <key>ServerName</key>
+          <string>dns.alidns.com</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

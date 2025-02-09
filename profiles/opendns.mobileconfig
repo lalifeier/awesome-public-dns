@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>OpenDNS</string>
+    <key>PayloadDescription</key>
+    <string>Adds the Cisco OpenDNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.974433b4-10d9-4b0b-8275-49bac263dcf4</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>974433b4-10d9-4b0b-8275-49bac263dcf4</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- OpenDNS Standard (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>OpenDNS DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.5bd02ed2-b17b-4ade-981c-df4f9bfd5ee4</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>5bd02ed2-b17b-4ade-981c-df4f9bfd5ee4</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>208.67.222.222</string>
+            <string>208.67.220.220</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://doh.opendns.com/dns-query</string>
+        </dict>
+      </dict>
+      <!-- OpenDNS Standard (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>OpenDNS DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.7bd7e079-a757-473a-9f56-087b8dd3d73e</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>7bd7e079-a757-473a-9f56-087b8dd3d73e</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>208.67.222.222</string>
+            <string>208.67.220.220</string>
+          </array>
+          <key>ServerURL</key>
+          <string>dns.opendns.com</string>
+        </dict>
+      </dict>
+      <!-- OpenDNS FamilyShield (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>OpenDNS Family DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.32f8d24c-b76a-424b-bf62-766f40fcafd3</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>32f8d24c-b76a-424b-bf62-766f40fcafd3</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>208.67.222.123</string>
+            <string>208.67.220.123</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://doh.familyshield.opendns.com/dns-query</string>
+        </dict>
+      </dict>
+      <!-- OpenDNS FamilyShield (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>OpenDNS Family DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.6dfd2597-eb46-4f80-9545-ab52763944af</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>6dfd2597-eb46-4f80-9545-ab52763944af</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>208.67.222.123</string>
+            <string>208.67.220.123</string>
+          </array>
+          <key>ServerURL</key>
+          <string>familyshield.opendns.com</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

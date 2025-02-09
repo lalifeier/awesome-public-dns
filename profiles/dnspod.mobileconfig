@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>DNSPod</string>
+    <key>PayloadDescription</key>
+    <string>Adds the DNSPod to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.653e8876-f458-4e52-8520-63d42c5a41ca</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>653e8876-f458-4e52-8520-63d42c5a41ca</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- DNSPod Public DNS (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>DNSPod Public DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.f0ff968a-1986-4b03-a887-2ec5c1a72109</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>f0ff968a-1986-4b03-a887-2ec5c1a72109</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>1.12.12.12</string>
+            <string>120.53.53.53</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://doh.pub/dns-query</string>
+        </dict>
+      </dict>
+      <!-- DNSPod Public DNS (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>DNSPod Public DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.aa8c4841-bfd2-4bd1-8b56-d17ce96678df</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>aa8c4841-bfd2-4bd1-8b56-d17ce96678df</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>1.12.12.12</string>
+            <string>120.53.53.53</string>
+          </array>
+          <key>ServerName</key>
+          <string>dot.pub</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

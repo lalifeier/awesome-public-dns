@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>Google Public DNS</string>
+    <key>PayloadDescription</key>
+    <string>Adds the Google Public DNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.3887994d-3581-4b0f-911b-f97c5c3719da</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>3887994d-3581-4b0f-911b-f97c5c3719da</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- Google Public DNS (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Google Public DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.15a21987-252c-41b3-82c1-518ba7de2eaf</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>15a21987-252c-41b3-82c1-518ba7de2eaf</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2001:4860:4860::8888</string>
+            <string>2001:4860:4860::8844</string>
+            <string>8.8.8.8</string>
+            <string>8.8.4.4</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://dns.google/dns-query</string>
+        </dict>
+      </dict>
+      <!-- Google Public DNS (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Google Public DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.4214c673-2d29-4b0d-ab7b-82af6ff80416</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>4214c673-2d29-4b0d-ab7b-82af6ff80416</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2001:4860:4860::8888</string>
+            <string>2001:4860:4860::8844</string>
+            <string>8.8.8.8</string>
+            <string>8.8.4.4</string>
+          </array>
+          <key>ServerName</key>
+          <string>dns.google</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>360 Secure DNS</string>
+    <key>PayloadDescription</key>
+    <string>Adds the 360 Secure DNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.cde29678-ffdb-4878-9a3c-b869ef3737a1</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>cde29678-ffdb-4878-9a3c-b869ef3737a1</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- 360 Secure DNS (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>360 Secure DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.3813693d-5716-420c-a376-16e4c447b156</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>3813693d-5716-420c-a376-16e4c447b156</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerURL</key>
+          <string>https://doh.360.cn/dns-query</string>
+        </dict>
+      </dict>
+      <!-- 360 Secure DNS (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>360 Secure DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.89fe07dd-57ed-46dc-864b-56498ace3962</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>89fe07dd-57ed-46dc-864b-56498ace3962</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerName</key>
+          <string>dot.360.cn</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

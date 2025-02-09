@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>Quad101</string>
+    <key>PayloadDescription</key>
+    <string>Adds the Quad101 DNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.7a347c57-b263-4a0e-8cd9-e09967eda93a</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>7a347c57-b263-4a0e-8cd9-e09967eda93a</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- Quad101 (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Quad101 DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.cb258545-8bf4-49fd-bb36-8024e927a9ce</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>cb258545-8bf4-49fd-bb36-8024e927a9ce</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2001:de4::101</string>
+            <string>2001:de4::102</string>
+            <string>101.101.101.101</string>
+            <string>101.102.103.104</string>
+          </array>
+          <key>ServerURL</key>
+          <string>https://dns.twnic.tw/dns-query</string>
+        </dict>
+      </dict>
+      <!-- Quad101 (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Quad101 DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.ad53583f-20b8-4c9f-8caa-9e82c8e5a74b</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>ad53583f-20b8-4c9f-8caa-9e82c8e5a74b</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerAddresses</key>
+          <array>
+            <string>2001:de4::101</string>
+            <string>2001:de4::102</string>
+            <string>101.101.101.101</string>
+            <string>101.102.103.104</string>
+          </array>
+          <key>ServerName</key>
+          <string>dns.twnic.tw</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

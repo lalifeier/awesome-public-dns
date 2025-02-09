@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>18Bit DNS</string>
+    <key>PayloadDescription</key>
+    <string>Adds the 18Bit DNS to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.653e8876-f458-4e52-8520-63d42c5a41ca</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>653e8876-f458-4e52-8520-63d42c5a41ca</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- 18Bit DNS (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>18Bit DNS over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.a55a1012-6e18-4d89-8196-619a6293cee4</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>a55a1012-6e18-4d89-8196-619a6293cee4</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerURL</key>
+          <string>https://doh.18bit.cn/dns-query</string>
+        </dict>
+      </dict>
+      <!-- 18Bit DNS (DoT) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>18Bit DNS over TLS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.05bfd934-1944-4e9f-9650-d12309ddb493</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>05bfd934-1944-4e9f-9650-d12309ddb493</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>TLS</string>
+          <key>ServerName</key>
+          <string>dns.18bit.cn</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

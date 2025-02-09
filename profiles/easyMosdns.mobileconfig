@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadDisplayName</key>
+    <string>EasyMosdns</string>
+    <key>PayloadDescription</key>
+    <string>Adds the EasyMosdns to Big Sur and iOS 14 based systems.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.profile.dc4f802d-b33f-4e13-9f02-095e10b602f7</string>
+    <key>PayloadScope</key>
+    <string>System</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>dc4f802d-b33f-4e13-9f02-095e10b602f7</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+      <!-- EasyMosdns (DoH) -->
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>EasyMosdns over HTTPS</string>
+        <key>PayloadIdentifier</key>
+        <string>com.apple.dns.4c9b468b-cdca-4c8b-ba73-e66286a21ae2</string>
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+        <key>PayloadUUID</key>
+        <string>4c9b468b-cdca-4c8b-ba73-e66286a21ae2</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+          <key>ServerURL</key>
+          <string>https://doh.apad.pro/dns-query</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>
