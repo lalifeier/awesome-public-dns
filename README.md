@@ -1,6 +1,6 @@
 # 🌍 Awesome Public DNS
 
-📖 **全球公共 DNS 服务器合集，提供 iOS/macOS 描述文件 (`.mobileconfig`) 便捷配置。**
+📖 **全球公共 DNS 服务器合集，提供 iOS/macOS 描述文件 (`.mobileconfig`)。**
 
 ---
 
