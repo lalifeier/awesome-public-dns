@@ -64,18 +64,18 @@
 
 | 提供商 | 备注 | DoH | DoT | 安装链接 |
 | ------ | ---- | ---- | ---- | -------- |
-| Ali DNS | 阿里云公共 DNS | ✅ | ✅ | [安装描述文件](profiles/aliyuns.mobileconfig) |
-| DNSPod | 腾讯旗下 DNS | ✅ | ✅ | [安装描述文件](profiles/dnspods.mobileconfig) |
-| 360 Secure DNS | 360 安全DNS | ✅ | ✅ | [安装描述文件](profiles/360s.mobileconfig) |
-| Google DNS | 全球通用，高稳定性 | ✅ | ✅ | [安装描述文件](profiles/googles.mobileconfig) |
-| Cloudflare DNS | 1.1.1.1，隐私保护强 | ✅ | ✅ | [安装描述文件](profiles/cloudflares.mobileconfig) |
-| Quad9 | 强调安全性，拦截恶意网站 | ✅ | ✅ | [安装描述文件](profiles/quad9s.mobileconfig) |
-| Quad101 | 台湾 TWNIC 提供，去广告 | ✅ | ✅ | [安装描述文件](profiles/quad101s.mobileconfig) |
-| AdGuard | 强力去广告，保护隐私 | ✅ | ✅ | [安装描述文件](profiles/adguards.mobileconfig) |
+| Ali DNS | 阿里云公共 DNS | ✅ | ✅ | [安装描述文件](profiles/aliyun.mobileconfig) |
+| DNSPod | 腾讯旗下 DNS | ✅ | ✅ | [安装描述文件](profiles/dnspod.mobileconfig) |
+| 360 Secure DNS | 360 安全DNS | ✅ | ✅ | [安装描述文件](profiles/360.mobileconfig) |
+| Google DNS | 全球通用，高稳定性 | ✅ | ✅ | [安装描述文件](profiles/google.mobileconfig) |
+| Cloudflare DNS | 1.1.1.1，隐私保护强 | ✅ | ✅ | [安装描述文件](profiles/cloudflare.mobileconfig) |
+| Quad9 | 强调安全性，拦截恶意网站 | ✅ | ✅ | [安装描述文件](profiles/quad9.mobileconfig) |
+| Quad101 | 台湾 TWNIC 提供，去广告 | ✅ | ✅ | [安装描述文件](profiles/quad101.mobileconfig) |
+| AdGuard | 强力去广告，保护隐私 | ✅ | ✅ | [安装描述文件](profiles/adguard.mobileconfig) |
 | CleanBrowsing | 适合家长控制，过滤成人内容 | ✅ | ✅ | [安装描述文件](profiles/CleanBrowsing.mobileconfig) |
-| OpenDNS | 思科旗下 DNS，可定制过滤规则 | ✅ | ✅ | [安装描述文件](profiles/opendnss.mobileconfig) |
-| 18Bit | 去广告 | ✅ | ✅ | [安装描述文件](profiles/18bits.mobileconfig) |
-| EasyMosdns | 去广告 | ✅ | ❎ | [安装描述文件](profiles/easyMosdnss.mobileconfig) |
+| OpenDNS | 思科旗下 DNS，可定制过滤规则 | ✅ | ✅ | [安装描述文件](profiles/opendns.mobileconfig) |
+| 18Bit | 去广告 | ✅ | ✅ | [安装描述文件](profiles/18bit.mobileconfig) |
+| EasyMosdns | 去广告 | ✅ | ❎ | [安装描述文件](profiles/easyMosdns.mobileconfig) |
 | 清风云 DNS | 去广告 | ✅ | ✅ | [安装描述文件](profiles/ipv4dns.mobileconfig) |
 
 ### 📱 iOS / iPadOS
